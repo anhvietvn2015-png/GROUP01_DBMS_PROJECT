@@ -1,0 +1,70 @@
+2026-05-02 13:14:39,425 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: mouse
+2026-05-02 13:14:45,291 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: a
+2026-05-02 13:15:05,221 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Printer Choose
+2026-05-02 13:15:24,271 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: 1
+2026-05-02 13:34:40,031 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Mouse
+2026-05-02 13:35:00,356 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Mouse Instead
+2026-05-02 13:35:06,241 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Mouse
+2026-05-02 13:35:59,044 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Mouse
+2026-05-02 13:36:09,181 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: Mouse
+2026-05-04 22:55:52,711 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: 'mouse', Max Price: 0.0
+2026-05-04 22:55:53,609 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: 'mouse', Max Price: 0.0
+2026-05-04 22:55:53,679 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
+2026-05-04 22:56:01,509 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
+2026-05-04 22:56:03,142 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: 'm', Max Price: 0.0
+2026-05-04 22:56:07,828 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
+2026-05-04 22:56:09,696 - INFO - Action: PRODUCT_SEARCH | Details: Keyword: 'a', Max Price: 0.0
+2026-05-04 23:22:29,078 - ERROR - Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
+2026-05-04 23:28:16 | INFO     | USER: ADMIN | ACTION: PRODUCT_SEARCH | DETAILS: Keyword: 'Mouse', Max Price: 0.0
+2026-05-04 23:28:33 | INFO     | USER: ADMIN | ACTION: VIEW_REPORT | DETAILS: Accessed Customer Purchase Summary
+2026-05-04 23:28:33 | ERROR    | Exception during reset or similar
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
