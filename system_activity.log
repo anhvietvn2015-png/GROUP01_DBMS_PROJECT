@@ -608,3 +608,22 @@ Traceback (most recent call last):
   File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
     self._cmysql.rollback()
 _mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
+2026-05-05 02:56:47 | ERROR    | Exception during reset or similar
+Traceback (most recent call last):
+  File "C:\Users\PC\dbms_project\crud_logic.py", line 38, in create_order
+    while result.next_result():
+          ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CursorResult' object has no attribute 'next_result'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 984, in _finalize_fairy
+    fairy._reset(
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1439, in _reset
+    pool._dialect.do_rollback(self)
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 725, in do_rollback
+    dbapi_connection.rollback()
+  File "c:\Users\PC\dbms_project\.venv\Lib\site-packages\mysql\connector\connection_cext.py", line 611, in rollback
+    self._cmysql.rollback()
+_mysql_connector.MySQLInterfaceError: Commands out of sync; you can't run this command now
