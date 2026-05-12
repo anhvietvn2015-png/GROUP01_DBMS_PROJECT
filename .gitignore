@@ -1,10 +1,18 @@
-#đóng vai trò như một "màng lọc" để ngăn chặn các tệp không cần thiết hoặc nhạy cảm bị đẩy lên GitHub
-#Ngăn chặn việc tải lên môi trường ảo cá nhân. Mỗi thành viên sẽ tự tạo môi trường ảo riêng trên máy mình để tránh xung đột phiên bản
-.venv/ 
-#Đây là nơi lưu mật khẩu Database và thông tin bảo mật cá nhân. File này tuyệt đối không được đưa lên GitHub để tránh bị đánh cắp tài khoản.
+# Chặn file chứa mật khẩu (Quan trọng nhất)
 .env
-#Loại bỏ các tệp tạm do Python tự sinh ra khi chạy code. Những tệp này không có giá trị về mặt lập trình và làm nặng bộ nhớ Git.
-__pycache__/
-#hặn các tệp sao lưu tự động của MySQL Workbench để giữ cho kho lưu trữ (repository) sạch sẽ, chỉ chứa các file thiết kế chính thức.
-*.mwb.bak
 
+# Chặn các file rác của Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Chặn file log hoạt động (để tránh lộ dữ liệu giao dịch)
+*.log
+
+# Chặn file cấu hình riêng của IDE
+.vscode/
+.idea/
