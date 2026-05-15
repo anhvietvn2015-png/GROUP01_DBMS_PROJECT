@@ -36,4 +36,11 @@ class DatabaseManager:
             raise e
         finally: cursor.close()
 
+    def fetch_all(self, query, params=None):
+        cursor = self.connection.cursor(dictionary=True)
+        cursor.execute(query, params or ())
+        data = cursor.fetchall()
+        cursor.close()
+        return data
+
 db_mgr = DatabaseManager()

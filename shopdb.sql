@@ -1368,6 +1368,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
 DELIMITER ;;
+
 CREATE DEFINER=`root`@`localhost` PROCEDURE `SHOW_INVOICE_DETAILS`(IN p_inv_number INT)
 BEGIN
 	IF NOT EXISTS (SELECT 1 FROM INVOICE WHERE INV_NUMBER = p_inv_number) THEN
@@ -1380,6 +1381,7 @@ BEGIN
 	FROM LINE JOIN PRODUCT ON LINE.P_CODE = PRODUCT.P_CODE WHERE INV_NUMBER = p_inv_number;
 END ;;
 DELIMITER ;
+
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
@@ -1697,3 +1699,4 @@ DELIMITER ;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2026-05-12  0:10:13
+
